@@ -84,7 +84,7 @@ The environments can be accessed via the API hosts below.
 |sandbox    | https://live.cpayapi.com |
 
 ### Signature
-In this section, we will show the mechanism of generating `sign` parameter.  
+In this section, we will show the mechanism of generating parameter `sign`.  
 We also provide some code examples to shorten integration time.
 
 > See details [here](https://github.com/cpayapi-com/document/blob/main/api-reference/signature.md)

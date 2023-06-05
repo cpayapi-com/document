@@ -9,7 +9,7 @@ The bellowing is the event list when we send the webhook:
 
 
 ## How to Configure the Notification Endpoint
-- Posted to `callBackURL` parameter when the checkout endpoint called.
+- Posted to parameter `callBackURL` when the checkout endpoint called.
 - Navigate to `User Center / User Center / Basic Information / Callback URL of a successful payment`, 
   and configure it in `Merchant System`.
 
