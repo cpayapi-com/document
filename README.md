@@ -1,4 +1,4 @@
-# CPAY Integration Tutorial
+# CPay Integration Tutorial
 
 ## Table of Contents
 
@@ -72,7 +72,7 @@ In this section, we will show details of CPay APIs for technical engineer.
 
 
 ### APIs 
-> See details [here](https://github.com/cpayapi-com/document/blob/main/api-reference/overview.md)
+All APIs will be seen [here](https://github.com/cpayapi-com/document/blob/main/api-reference/overview.md)
 
 
 ### API Host
