@@ -9,7 +9,7 @@
   - [KYC API](#kyc-api)
 - [SDK](#sdk)
 - [Postman Collection](#postman-collection)
-
+- [Idempotency](#idempotency)
 
 [<< back Home](https://github.com/cpayapi-com/document/blob/main/README.md)
 
@@ -42,4 +42,21 @@ The environments can be accessed via the API hosts below.
 Download [here](#)
 
 > coming soon.
+
+## Idempotency
+All APIs support idempotency, allowing to retry a request multiple times while only performing the action once. 
+This helps avoid unwanted duplication in case of failures and retries.
+
+If the process has not been completed in the previous request because of a transient error or timeout,
+the subsequent retry pushes the action to its completion. 
+
+If the process has been completed already, the retry process will be performed only once and get the same result.  
+
+The following shows the most commonly used APIs and their idempotency rules.
+
+| API Name | Rules |
+| :----  | :---- |
+|Payin with H2H Mode   | `merchantId` + `merchantTradeNo` |
+
+
 
