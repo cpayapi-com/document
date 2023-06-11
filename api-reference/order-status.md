@@ -2,7 +2,8 @@
 
 | Status | Description |
 | :----  | :---- |
-|0   | PENDING (Temporary status means that the payment is not started in the bank side) |
-|11  | PROCESSING (Temporary status means that the payment is not finished) |
-|14  | COMPLETED |
-|15  | CLOSED  |
+|0   | PENDING (Temporary status, the transaction may not be started in the bank side and it will be changed to 14/15 finally) |
+|11  | PROCESSING (Temporary status, the transaction is waiting for a notification from the bank, it will be changed to 14/15 finally) |
+|14  | COMPLETED (Final status, the transaction is successful)|
+|15  | CLOSED (Final status, the transaction is failed) |
+
