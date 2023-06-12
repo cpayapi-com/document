@@ -1,4 +1,4 @@
-# H2H mode payment（from）
+# H2H mode payment
 
 ## Description
 
@@ -65,8 +65,38 @@
 ## Example
 
 ```shell
-curl --request POST 
-'https://live.cpayapi.com/openapi/v1/pwpp?merchantId=20006051&userId=20006051&amount=1&iddCode=34&mobile=34644789836&city=Sant%20Cugat&zip=08173&country=ES&cardNumber=5354632547818410&cvv=364&ip=123.123.121.62&currency=USD&firstName=erik&lastName=lara&email=erikaaronlara%40gmail.com&addressLine=ocea%20atlantic%2052&expDate=06%2F24&callBackURL=https%3A%2F%2Flive.cpayapi.com%2Fopenapi%2Fv1%2Fcallback%2Finvictus&successURL=https%3A%2F%2Fcashier.cpayapi.com%2Fsucced&failURL=https%3A%2F%2Fcashier.cpayapi.com%2Flose&merchantTradeNo=NO202305310016&products=[{%22name%22%3A%22pen%22%2C%22price%22%3A%220.5%22%2C%22num%22%3A%221%22%2C%22currency%22%3A%22USD%22}]&payChannel=payChannel1&createTime=1664353148000&clientHTTPAccept=text%2Fhtml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%3Bq%3D0.9%2Cimage%2Favif%2Cimage%2Fwebp%2Cimage%2Fapng%2C*%2F*%3Bq%3D0.8%2Capplication%2Fsigned-exchange%3Bv%3Db3%3Bq%3D0.7&clientHTTPUserAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F112.0.0.0%20Safari%2F537.36&storeCc=1&sign=9c5c4b130b35349a7804ac4ab1a5081933c67ab700ff84176c6d323c9fe548ca&retURL=https%3A%2F%2Fcashier.cpayapi.com%2Fsucced'
+curl --silent --location 'https://live.cpayapi.com/openapi/v2/pwpp' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"merchantId": 20006051,
+	"userId": "user-20006051",
+	"amount": "100.11",
+	"createTime": "1664353148000",
+	"currency": "USD",
+	"ip": "45.82.243.161",
+	"merchantTradeNo": "NO202305261652",
+	"firstName": "Joe",
+	"lastName": "Doe",
+	"email": "Joe@gmail.com",
+	"iddCode": "971",
+	"mobile": "971524028321",
+	"addressLine": "LAMTARA 9 909",
+	"country": "ES",
+	"city": "Dubai",
+	"document": "88975525015",
+	"cardNumber": "4242424242424242",
+	"cvv": "123",
+	"expDate": "12/29",
+	"zip": "76167",
+	"payChannel": "payChannel1",
+	"callBackURL": "https://live.cpayapi.com/v1/callback",
+	"successURL": "https://cashier.cpayapi.com/succed",
+	"failURL": "https://cashier.cpayapi.com/lose",
+	"clientHTTPAccept": "text%2Fhtml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%3Bq%3D0.9%2Cimage%2Favif%2Cimage%2Fwebp%2Cimage%2Fapng%2C*%2F*%3Bq%3D0.8%2Capplication%2Fsigned-exchange%3Bv%3Db3%3Bq%3D0.7",
+	"clientHTTPUserAgent": "Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F112.0.0.0%20Safari%2F537.36",
+	"retURL": "https://cashier.cpayapi.com/succed",
+	"sign": "b02c7d2fd87e1b00dd7efe7069b6a6a8330d6f2ec5b9a81f2fceda2b92eda40c"
+}'
 ```
 
 - successful example
