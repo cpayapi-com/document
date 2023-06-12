@@ -62,7 +62,6 @@ curl --location --request POST 'https://api.cpay.ltd/openapi/v1/submitKYC' --dat
     ],
     "Sign": "aliquip adipisicing"
 }'
-
 ```
 
 ```json
@@ -72,6 +71,6 @@ curl --location --request POST 'https://api.cpay.ltd/openapi/v1/submitKYC' --dat
     "data": {
         "count": 10
     },
-    "traceid": "221117082830X664937"
+    "traceid": "221117082830X664938"
 }
 ```
