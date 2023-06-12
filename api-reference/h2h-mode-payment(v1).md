@@ -1,4 +1,4 @@
-# H2H mode payment（from）
+# H2H mode payment
 
 ## Description
 
