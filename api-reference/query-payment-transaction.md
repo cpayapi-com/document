@@ -1,10 +1,10 @@
-# Query Payment Order Information
+# Query Payment Transaction
 
 ## Description
-Retrieve payment order information by a unique order id.
+Retrieve details of a payment transaction by a unique order id.
 
 ## Endpoint
-- REST API: **GET** `https://{api-host}/openapi/v1/getOrderDetail`
+- REST API: **GET** `https://live.cpayapi.com/openapi/v1/getOrderDetail`
 
 ## Parameters
 
@@ -49,28 +49,85 @@ Retrieve payment order information by a unique order id.
 curl 'https://{api-host}/openapi/v1/getOrderDetail?merchantId={merchantId}&merchantTradeNo={merchantTradeNo}&cpayOrderId={cpayOrderId}&sign={sign}'
 ```
 
+- Order status is `COMPLETED`
 ```json
 {
   "code": 0,
   "msg": "success",
   "data": {
-    "actualAmount": "10",
-    "orderAmount": "12",
+    "actualAmount": "95.00",
+    "orderAmount": "100.00",
     "createTime": 1663155010000,
     "currency": "USD",
-    "fee": "0",
-    "serviceFee": "0.99",
+    "fee": "5.00",
+    "serviceFee": "5.00",
     "hash": "",
     "merchantId": 20003092,
     "merchantTradeNo": "7b785240e426694635bb09fb101ae241",
     "merchantUserId": "test002",
     "network": "",
     "orderId": "2209141130105863014",
-    "pledgeAmount": "1.01",
-    "receivedAmount": "10.01",
-    "remark": "some remark info",
+    "pledgeAmount": "10.00",
+    "receivedAmount": "95.00",
+    "remark": "",
     "orderStatus": 14,
     "status": "14"
+  },
+  "traceid": "221117082056X6478814"
+}
+```
+
+- Order status is `PROCESSING`
+```json
+{
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "actualAmount": "0.00",
+    "orderAmount": "100.00",
+    "createTime": 1663155010000,
+    "currency": "USD",
+    "fee": "0.00",
+    "serviceFee": "0.00",
+    "hash": "",
+    "merchantId": 20003092,
+    "merchantTradeNo": "7b785240e426694635bb09fb101ae241",
+    "merchantUserId": "test002",
+    "network": "",
+    "orderId": "2209141130105863014",
+    "pledgeAmount": "0.00",
+    "receivedAmount": "0.00",
+    "remark": "",
+    "orderStatus": 11,
+    "status": "11"
+  },
+  "traceid": "221117082056X6478814"
+}
+```
+
+- Order status is `CLOSED`
+```json
+{
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "actualAmount": "0.00",
+    "orderAmount": "100.00",
+    "createTime": 1663155010000,
+    "currency": "USD",
+    "fee": "0.00",
+    "serviceFee": "0.00",
+    "hash": "",
+    "merchantId": 20003092,
+    "merchantTradeNo": "7b785240e426694635bb09fb101ae241",
+    "merchantUserId": "test002",
+    "network": "",
+    "orderId": "2209141130105863014",
+    "pledgeAmount": "0.00",
+    "receivedAmount": "0.00",
+    "remark": "3DS fail",
+    "orderStatus": 15,
+    "status": "15"
   },
   "traceid": "221117082056X6478814"
 }
