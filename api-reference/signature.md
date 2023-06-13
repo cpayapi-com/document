@@ -4,6 +4,15 @@
 [API Overview](https://github.com/cpayapi-com/document/blob/main/api-reference/overview.md) /
 _Signature_
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Code Examples](#code-examples)
+   - [PHP](#php)
+   - [Golang](#golang)
+   - [Java](#java)
+
+
 ## Introduction
 The signature is hashed with `SecurityKey` using `SHA256` algorithm.
 
@@ -23,7 +32,7 @@ curl -X POST 'https://domain/path/updateSth' -d '{"xx":1001,"yy":"","aa":"hello"
 
 4. Convert the ciphertext into lower case.
 
-## Code
+## Code Examples
 
 ### PHP
 > Note: Please don't use function `http_build_query` to build the parameters.  
