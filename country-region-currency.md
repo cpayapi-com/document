@@ -1,6 +1,9 @@
 # Country/Region and Currency
 
-[<< back Home](https://github.com/cpayapi-com/document/blob/main/README.md)
+
+[Home](https://github.com/cpayapi-com/document/blob/main/README.md) /
+_Country/Region and Currency_
+
 
 ## Table of Contents
 

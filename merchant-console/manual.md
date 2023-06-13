@@ -1,5 +1,6 @@
 # Merchant Console Manual
 
-[<< back Home](https://github.com/cpayapi-com/document/blob/main/README.md)
+[Home](https://github.com/cpayapi-com/document/blob/main/README.md) /
+_Merchant Console Manual_
 
 > coming soon.

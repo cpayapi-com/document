@@ -1,5 +1,10 @@
 # Query Payment Transaction
 
+[Home](https://github.com/cpayapi-com/document/blob/main/README.md) /
+[API Overview](https://github.com/cpayapi-com/document/blob/main/api-reference/overview.md) /
+_Query Payment Transaction_
+
+
 ## Description
 Retrieve details of a payment transaction by a unique order id.
 
