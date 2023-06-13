@@ -48,6 +48,8 @@ Retrieve details of a payment transaction by a unique order id.
 | data.remark | string | description of the order |
 | data.createTime | int64 | transaction created time in CPay (millisecond) |
 
+> Note: `orderAmount` = `receivedAmount` + `serviceFee`
+
 
 ## Example
 
