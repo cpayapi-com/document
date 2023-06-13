@@ -72,6 +72,9 @@ HTTP POST
 |createTime  | int64 | transaction created time in CPay (millisecond) |
 |sign  | string | for data security, generate by [algorithm](https://github.com/cpayapi-com/document/blob/main/api-reference/signature.md) |
 
+> Note: `orderAmount` = `receivedAmount` + `serviceFee`
+
+
 ### Expected Response
 CPay webhook service experts the only two response values in a TEXT, not a JSON or others.
 - `success`
