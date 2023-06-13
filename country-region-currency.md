@@ -12,11 +12,13 @@ _Country/Region and Currency_
 - [Payment Channel 1](#payment-channel-1)
 - [Payment Channel 2](#payment-channel-2)
 - [Payment Channel 3](#payment-channel-3)
+- [Payment Channel 4](#payment-channel-4)
 
 ## List of Payment Channel
 - `payChannel1`
 - `payChannel2`
 - `payChannel3`
+- `payChannel4`
 
 ## List of Currency
 - `USD`
@@ -28,7 +30,7 @@ _Country/Region and Currency_
 - Technical Tag: `payChannel1`
 - Card Type: `VISA` and `Master`
 - Currencies: `EUR` and `USD`
-- Master Card Countries/Regions Allowed:
+- Master Card Countries/Regions **Allowed**:
   - Austria
   - Australia
   - Belgium
@@ -67,7 +69,7 @@ _Country/Region and Currency_
   - Ukraine
   - United Kingdom
 
-- VISA Card Countries/Regions Blocked:
+- VISA Card Countries/Regions **Blocked**:
   - Australia
   - Afghanistan
   - Angola
@@ -141,7 +143,7 @@ _Country/Region and Currency_
 - Technical Tag: `payChannel2`
 - Card Type: `VISA` and `Master`
 - Currencies: `EUR` and `USD`
-- VISA Card and Master Card Countries/Regions Blocked:
+- VISA Card and Master Card Countries/Regions **Blocked**:
   - Algeria
   - Bangladesh
   - Bolivia
@@ -168,7 +170,7 @@ _Country/Region and Currency_
 - Technical Tag: `payChannel3`
 - Card Type: `VISA` and `Master`
 - Currencies: `BRL` and `USD`
-- VISA Card and Master Card Countries/Regions Allowed:
+- VISA Card and Master Card Countries/Regions **Allowed**:
   - Argentina
   - Brazil
   - Bolivia
@@ -186,3 +188,30 @@ _Country/Region and Currency_
   - Paraguay
   - Peru
   - Uruguay
+
+
+## Payment Channel 4
+
+- Technical Tag: `payChannel4`
+- Card Type: `VISA` and `Master`
+- Currencies: `EUR` and `USD`
+- VISA Card and Master Card Countries/Regions **Blocked**:
+  - Algeria
+  - Bangladesh
+  - Bolivia
+  - Cambodia
+  - China
+  - Colombia
+  - Ecuador
+  - Indonesia
+  - Jordan
+  - Kyrgyzstan
+  - Mongolia
+  - Morocco
+  - Nepal
+  - Pakistan
+  - Saudi Arabia
+  - SouthKorea
+  - Taiwan
+  - Uzbekistan
+  - Vietnam
