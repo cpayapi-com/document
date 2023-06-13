@@ -5,14 +5,20 @@
 ## Table of Contents
 
 - [List of Payment Channel](#list-of-payment-channel)
+- [List of Currency](#list-of-currency)
 - [Payment Channel 1](#payment-channel-1)
 - [Payment Channel 2](#payment-channel-2)
 - [Payment Channel 3](#payment-channel-3)
 
 ## List of Payment Channel
-- payChannel1
-- payChannel2
-- payChannel3
+- `payChannel1`
+- `payChannel2`
+- `payChannel3`
+
+## List of Currency
+- `USD`
+- `EUR`
+- `BRL`
 
 ## Payment Channel 1
 
