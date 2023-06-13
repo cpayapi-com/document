@@ -1,7 +1,22 @@
 # Webhook Notification
 
-[<< back Home](https://github.com/cpayapi-com/document/blob/main/README.md)
+[Home](https://github.com/cpayapi-com/document/blob/main/README.md) /
+_Webhook Notification_
 
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [How to Configure the Notification Endpoint](#how-to-configure-the-notification-endpoint)
+- [Notification Retry Mechanism](#notification-retry-mechanism)
+- [Notification Method and Data](#notification-method-and-data)
+  - [Method](#method)
+  - [Data](#data)
+  - [Expected Response](#expected-response)
+  - [Request Demo](#request-demo)
+
+
+## Introduction
 When the order status changes, the merchant will be notified and can take action accordingly.  
 The bellowing is the event list when we send the webhook:
 
@@ -30,7 +45,7 @@ The bellowing is the event list when we send the webhook:
 | 8 | 729 |
 | 9 | 2187 |
 
-## Notification Method & Data
+## Notification Method and Data
 
 ### Method
 HTTP POST
@@ -56,6 +71,9 @@ HTTP POST
 |remark  | string | description of the order status |
 |createTime  | int64 | transaction created time in CPay (millisecond) |
 |sign  | string | for data security, generate by [algorithm](https://github.com/cpayapi-com/document/blob/main/api-reference/signature.md) |
+
+> Note: `orderAmount` = `receivedAmount` + `serviceFee`
+
 
 ### Expected Response
 CPay webhook service experts the only two response values in a TEXT, not a JSON or others.

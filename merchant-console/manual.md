@@ -1,7 +1,6 @@
-# FAQ
+# Merchant Console Manual
 
 [Home](https://github.com/cpayapi-com/document/blob/main/README.md) /
-_FAQ_
+_Merchant Console Manual_
 
 > coming soon.
-

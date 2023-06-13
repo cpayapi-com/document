@@ -1,5 +1,8 @@
 # API Reference Overview
 
+[Home](https://github.com/cpayapi-com/document/blob/main/README.md) / 
+_API Reference Overview_
+
 ## Table of Contents
 
 - [API Host](#api-host)
@@ -11,7 +14,6 @@
 - [Postman Collection](#postman-collection)
 - [Idempotency](#idempotency)
 
-[<< back Home](https://github.com/cpayapi-com/document/blob/main/README.md)
 
 ## API Host
 
@@ -25,13 +27,13 @@ The environments can be accessed via the API hosts below.
 ## APIs
 ### Transaction API
 - [Query Payment Transaction](https://github.com/cpayapi-com/document/blob/main/api-reference/query-payment-transaction.md)
-- [Payin with H2H Mode(v1)](#)
-- [Payin with H2H Mode(v2)](#)
+- [Payin with H2H Mode(v1)](https://github.com/cpayapi-com/document/blob/main/api-reference/payin-with-h2h-mode-v1.md)
+- [Payin with H2H Mode(v2)](https://github.com/cpayapi-com/document/blob/main/api-reference/payin-with-h2h-mode-v2.md)
 ### Account API
 - [Query Account Balance](#)
 
 ### KYC API
-- [Submit KYC Information](#)
+- [Submit KYC Information](https://github.com/cpayapi-com/document/blob/main/api-reference/submit-kyc.md)
 
 ## SDK
 - [PHP SDK](#)

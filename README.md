@@ -55,11 +55,11 @@ Especially, we suggest you should update the `Password`, don't leak `Password` a
 
    > Important: Leaking `Security Key` to others is risky.
 
-## Merchant Portal
+## Merchant Console
 In this section, we will show details how to use the `Merchant Portal` with a manual.
 
 > Link https://console.cpayapi.com  
-> See details [here](https://github.com/cpayapi-com/document/blob/main/merchant-portal/manual.md)
+> See details [here](https://github.com/cpayapi-com/document/blob/main/merchant-console/manual.md)
 
 
 ## How it works
@@ -102,6 +102,12 @@ We also provide some code examples to shorten integration time.
 In this section, we will show details how CPay webhook service works, including `Configuration`, `Retry Mechanism` and `Natification Demos`.
 
 > See details [here](https://github.com/cpayapi-com/document/blob/main/webhook-notification.md)
+
+## Country/Region and Currency Supported
+In this section, we will list all countries/regions and currencies of each payment channel.
+
+> See details [here](https://github.com/cpayapi-com/document/blob/main/country-region-currency.md)
+
 
 ## FAQ
 In this section, we will show the frequently-asked questions about CPay service.
