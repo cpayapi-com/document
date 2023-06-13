@@ -27,7 +27,7 @@ This endpoint will help merchants to complete a pay-in transaction with `Host to
 | ccStorageID | string(64) | no | the bank can complete a payment with this parameter instead of card information |
 | firstName | string(20) | yes | first name on credit card   |
 | lastName | string(30) | yes | last name on credit card   |
-| email | string(64) | yes | email of billing, e.g. `hell@gamil.com` |
+| email | string(64) | yes | email of billing, e.g. `hello@gamil.com` |
 | iddCode | string(8) | yes | country calling code of billing, e.g. `852`(Hong Kong), see details [here](https://en.wikipedia.org/wiki/List_of_country_calling_codes) |
 | mobile | string(64) | yes | mobile of billing, e.g. `712345678`, don't add the iddCode as a prefix |
 | addressLine | string(64) | yes | address of billing |
@@ -39,7 +39,7 @@ This endpoint will help merchants to complete a pay-in transaction with `Host to
 | expDate | string(16) | yes | expiration of the card, month/year, e.g. `12/27` means the card will be expired at Dec. 2027|
 | ip | string(64) | yes | client IPV4 |
 | document | string(64) | no | identification number of users |
-| currency | string(8) | yes | currency code, e.g. `USD`, `EUR` and `BRL`. (all supported currencies](https://github.com/cpayapi-com/document/blob/main/country-region-currency.md#list-of-currency) |
+| currency | string(8) | yes | currency code, e.g. `USD`. [all supported currencies](https://github.com/cpayapi-com/document/blob/main/country-region-currency.md#list-of-currency) |
 | amount | string(32) | yes | amount to be paid, the precision is 2 decimal places, higher precision will be rounded, e.g. `19.011` -> `19.01`, `1.528` -> `1.53` |
 | products | string(512) | no | product information, a JSON string, e.g. `[{"name":"iphone 11","price":"5300.00","num":"2","currency":"CNY"},{"name":"macBook","price":"1234.00","num":"1","currency":"USD"}]` |
 | clientHTTPAccept | string(512) | no | field `Accept` of user's browser, it's mandatory if merchants use `payChannel2`, e.g. `text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7` |
