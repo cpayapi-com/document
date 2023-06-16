@@ -46,7 +46,7 @@ Especially, we suggest you should update the `Password`, don't leak `Password` a
    > Important: Leaking `Password` to others is risky.
 
 
-4. Get Credentials
+4. Get Credentials  
    Navigate to `User Center / User Center / Basic Information`, 
    and merchant will get the bellowing information:
    - `Merchant ID`
