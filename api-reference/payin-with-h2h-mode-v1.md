@@ -45,6 +45,7 @@ This endpoint will help merchants to complete a pay-in transaction with `Host to
 | callBackURL | string(256) | no | merchants will received notifications by this URL when payment `COMPLETED` or `CLOSED` |
 | successURL | string(256) | no | redirect to this URL when payment `COMPLETED`  |
 | failURL | string(256) | no | redirect to this URL when payment `CLOSED` |
+| retURL | string(256) | no | if merchants use `payChannel2`, after finishing the 3DS processing, the bank will redirect users to this URL |
 | payChannel | string(16) | no | all payment channels see [here](https://github.com/cpayapi-com/document/blob/main/country-region-currency.md#list-of-payment-channel) |
 | createTime | string(20) | no | order created time (ms) in merchant side |
 | sign | string(128) | yes | see [algorithm](https://github.com/cpayapi-com/document/blob/main/api-reference/signature.md) |

@@ -47,6 +47,7 @@ This endpoint will help merchants to complete a pay-in transaction with `Host to
 | callBackURL | string(256) | no | merchants will received notifications by this URL when payment `COMPLETED` or `CLOSED` |
 | successURL | string(256) | no | redirect to this URL when payment `COMPLETED`  |
 | failURL | string(256) | no | redirect to this URL when payment `CLOSED` |
+| retURL | string(256) | no | if merchants use `payChannel2`, after finishing the 3DS processing, the bank will redirect users to this URL |
 | payChannel | string(16) | no | all payment channels see [here](https://github.com/cpayapi-com/document/blob/main/country-region-currency.md#list-of-payment-channel) |
 | createTime | string(20) | no | order created time (ms) in merchant side |
 | sign | string(128) | yes | see [algorithm](https://github.com/cpayapi-com/document/blob/main/api-reference/signature.md) |
@@ -95,6 +96,7 @@ curl -X POST 'https://live.cpayapi.com/openapi/v1/pwpp' \
 	"callBackURL": "https://live.cpayapi.com/v1/callback",
 	"successURL": "https://cashier.cpayapi.com/succed",
 	"failURL": "https://cashier.cpayapi.com/lose",
+	"retURL": "https://cashier.cpayapi.com/succed",
 	"clientHTTPAccept": "text%2Fhtml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%3Bq%3D0.9%2Cimage%2Favif%2Cimage%2Fwebp%2Cimage%2Fapng%2C*%2F*%3Bq%3D0.8%2Capplication%2Fsigned-exchange%3Bv%3Db3%3Bq%3D0.7",
 	"clientHTTPUserAgent": "Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F112.0.0.0%20Safari%2F537.36",
 	"sign": "b02c7d2fd87e1b00dd7efe7069b6a6a8330d6f2ec5b9a81f2fceda2b92eda40c"
