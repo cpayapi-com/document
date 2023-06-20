@@ -1,5 +1,7 @@
 # CPay Integration Tutorial
 
+> _This tutorial will be moved to **https://docs.cpayapi.com** soon, and will not be updated any more._
+
 ## Table of Contents
 
 - [Introduction](#introduction)
